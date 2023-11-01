@@ -1,6 +1,6 @@
-# E-commerce Web Scraping and Data Analysis
+# E-commerce Web Scraping, Data Analysis, and Database Storage
 
-This project is a Python-based web scraping application for gathering product information from Amazon and Flipkart and then cleaning and structuring the data for further analysis. Additionally, this project aims to establish an SQL database to store the collected data and visualize it using Power BI.
+This project is a Python-based web scraping application for gathering product information from Amazon and Flipkart, cleaning and structuring the data, and storing it in a PostgreSQL SQL database. The project is currently in the process of establishing data visualization using Power BI for insights and decision-making.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -12,33 +12,32 @@ This project is a Python-based web scraping application for gathering product in
 
 ## Introduction
 
-Welcome to the E-commerce Web Scraping and Data Analysis project! This project is designed to collect data from popular e-commerce websites, Amazon and Flipkart, using web scraping techniques. The collected data includes product names, URLs, prices, MRPs, ratings, and rating counts. The data is then cleaned and structured using Python's Pandas library to prepare it for analysis.
+Welcome to the E-commerce Web Scraping, Data Analysis, and Database Storage project! This project is designed to collect data from popular e-commerce websites, Amazon and Flipkart, using web scraping techniques. The collected data includes product names, URLs, prices, MRPs, ratings, and rating counts. The data is then cleaned and structured using Python's Pandas library and stored in a PostgreSQL SQL database.
 
 ## Project Overview
 
 ### Web Scraping
 - The project utilizes Python with Selenium and BeautifulSoup to scrape product information from Amazon and Flipkart.
-- Users are prompted to input a search query and the number of pages they wish to scrape.
-- The data from Amazon and Flipkart is collected and stored in separate lists for further processing.
-
-### Data Cleaning
-- After scraping, the data is cleaned and structured.
-- Missing values are handled, and data types are converted to ensure consistency and compatibility for analysis.
+- Users are prompted to input a search query and the number of pages they wish to scrape for both Amazon and Flipkart.
+- The scraped data is now cleaned and structured and includes price categories for analysis.
 
 ### SQL Database
-- The next step is to establish an SQL database to store the cleaned data. This database will facilitate data retrieval and reporting.
+- The project has successfully established a PostgreSQL SQL database to store the cleaned data from both Amazon and Flipkart.
+- The data is stored with additional price categories to facilitate analysis.
 
-### Data Visualization
+### Data Visualization (In Progress)
 - In the future, the data stored in the SQL database will be analyzed and visualized using Power BI to gain insights and make informed decisions.
 
 ## Getting Started
 
-To run the web scraping application, you'll need to have the following installed:
+To run the web scraping application and store data in the SQL database, you'll need to have the following installed:
 - Python
 - Selenium
 - BeautifulSoup
 - Pandas
 - Chrome WebDriver
+- PostgreSQL
+- Psycopg2
 
 Ensure that you have the necessary packages installed by running:
 ```
@@ -51,23 +50,25 @@ You also need to download the Chrome WebDriver corresponding to your Chrome brow
 
 1. Install the required packages as mentioned in the "Getting Started" section.
 
-2. Run the Python script:
+2. Run the Python script to scrape data and store it in the SQL database:
 ```
 python e_commerce_scraper.py
 ```
 
 Follow the on-screen prompts to provide the search query and the number of pages to scrape for both Amazon and Flipkart.
 
-The scraped data will be stored in CSV files with the search query as the filename.
+The scraped and cleaned data will be stored in the SQL database and the same SQL database will be connected to Power BI for further visualizations.
 
 ## Future Enhancements
 
-The future plans for this project include:
-- Establishing a SQL database using PostgreSQL and Psycopg2 to store the scraped and cleaned data.
-- Building data visualizations and dashboards using Power BI to provide insights into the e-commerce data.
-- Using Machine Learning to choose the optimum product for the person according to the requirements.  
+The project is continuously evolving, with ongoing work in the following areas:
 
-Stay tuned for updates and improvements!
+- Establishing a PostgreSQL database to store scraped and cleaned data has been successfully completed.
+- The next phase of the project involves data visualization using Power BI. The PostgreSQL database is connected to Power BI to create interactive dashboards and visualizations, enabling in-depth analysis of the e-commerce data.
+- In addition to data visualization, the project aims to explore machine-learning techniques for personalized product recommendations based on user preferences.
+
+Stay tuned for more updates as the project progresses, and new insights are gained through data visualization and analysis!
+
 
 ## License
 
