@@ -63,9 +63,8 @@ The scraped and cleaned data will be stored in the SQL database and the same SQL
 
 The project is continuously evolving, with ongoing work in the following areas:
 
-- Establishing a PostgreSQL database to store scraped and cleaned data has been successfully completed.
-- The next phase of the project involves data visualization using Power BI. The PostgreSQL database is connected to Power BI to create interactive dashboards and visualizations, enabling in-depth analysis of the e-commerce data.
-- In addition to data visualization, the project aims to explore machine-learning techniques for personalized product recommendations based on user preferences.
+- Building data visualizations and dashboards using Power BI to provide insights into the e-commerce data.
+- Using Machine Learning to choose the optimum product for users according to their requirements.
 
 Stay tuned for more updates as the project progresses, and new insights are gained through data visualization and analysis!
 
